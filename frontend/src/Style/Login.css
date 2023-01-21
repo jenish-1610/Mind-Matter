@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.outerbox {
+
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#83EAF1, #63A4FF);
+}
+
+.login-header h1 {
+
+    font-size: 2.5rem;
+    color: #212121;
+    text-align: center;
+
+}
+
+.login-header h1::after {
+
+    content: '';
+    width: 40px;
+    height: 4px;
+    border-radius: 3px;
+    position: absolute;
+    background: #045DE9;
+    top: 78px;
+    left: 45.2%;
+    transform: translateY(-50%);
+}
+
+.innerbox {
+
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px 40px;
+    /* box-shadow: 2px 2px 5px #2773a5; */
+    /* z-index: 1; */
+}
+
+
+
+.loginbody {
+
+    margin: 20px 0;
+}
+
+.loginbody p {
+
+    margin: 10px 0;
+}
+
+.loginbody p label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.loginbody p input {
+
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #cccc;
+    border-radius: 4px;
+    font-size: 1rem;
+
+}
+
+.loginbody p input[type="submit"] {
+
+    /* border-radius: 10px; */
+    border: none;
+
+    background-color: #57a0ff;
+
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+.loginbody p input[type="submit"]:hover {
+
+    background-color: #157aff;
+}
+
+.signup-footer p {
+    color: #555;
+    text-align: center;
+}
+
+.signup-footer p a {
+    color: #2773a5;
+}

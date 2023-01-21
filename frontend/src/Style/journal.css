@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(206, 206, 206);
+}
+.logo
+{
+   display:flex;
+   align-items: center;
+   justify-content: center;
+}
+img{
+    margin:100px;
+   width:300px;
+   background-blend-mode:normal;
+}
+.Button{
+    display:flex;
+    justify-content: center;
+    padding:10px;
+    
+    margin-bottom: auto;
+  }
+  .button {
+     width:200px;
+    border-radius: 15px;
+    border-color:rgb(46, 56, 73);
+    font-weight: bolder;
+    font-size: medium;
+     padding-top: 10px;;
+    color: rgb(47, 85, 156);
+    /* Created with https://www.css-gradient.com */
+  /* Created with https://www.css-gradient.com */
+  background: rgba(251, 254, 255, 1.0);
+  background: -webkit-linear-gradient(bottom, rgb(34, 52, 58), rgba(180, 212, 229, 1.0));
+  background: -moz-linear-gradient(bottom, rgb(42, 63, 70), rgba(180, 212, 229, 1.0));
+  background: linear-gradient(to top, rgb(56, 77, 84), rgba(180, 212, 229, 1.0));
+  margin:5px;
+  padding:8px;
+    
+  
+  }
+  
+p
+{
+    display:flex;
+    justify-content: center;
+}
+.par p{
+    font-weight:bolder;
+    color: rgb(71, 71, 71);
+   
+}
+.par2 p{
+    font-weight:lighter;
+    color:rgb(71, 71, 71);
+    margin-top: 10px;
+}

@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  
+}
+
+.main-nav {
+ display: flex;
+ align-items: center;
+ justify-content:space-between;
+  position: fixed;
+  background-color:rgb(105, 192, 220);
+  margin-bottom: 20px;
+  width: 100%;
+  height:auto;
+  box-shadow: 0 2px 4px 0 rgb(36, 61, 112);
+}
+.logo
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color:white;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin:10px;
+  
+}
+.nav-links {
+  gap: 20px;
+}
+
+.nav-links li {
+  padding-top: 20px
+}
+
+.nav-links li a {
+  color:white;
+  position: relative;
+  font-weight: 800;
+  font-size: 1 rem;
+}
+
+.nav-links li a:hover {
+  border-bottom: 3px solid #3471d3;
+  outline: 0;
+  transition: color .45s ease-out;
+}
+
+
+.nav-links li a:hover .nav-sub {
+  display: block;
+
+}
+
+
+
+.nav-sub {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.nav-sub li a {
+  color: #13404f;
+  display: block;
+}
+
+.nav-sub li a:hover {
+  color: crimson;
+  border-bottom: none;
+}
+
+.nav-links li a:hover {
+  display: block  ;
+}
+.Button{
+  display:flex;
+  align-items: flex-end;
+  padding:10px;
+  margin-bottom: auto;
+}
+.button {
+   width:80px;
+  border-radius: 15px;
+  border-color:turquoise;
+  color: rgb(0, 45, 128);
+  /* Created with https://www.css-gradient.com */
+/* Created with https://www.css-gradient.com */
+background: rgba(251, 254, 255, 1.0);
+background: -webkit-linear-gradient(bottom, rgba(251, 254, 255, 1.0), rgba(180, 212, 229, 1.0));
+background: -moz-linear-gradient(bottom, rgba(251, 254, 255, 1.0), rgba(180, 212, 229, 1.0));
+background: linear-gradient(to top, rgba(251, 254, 255, 1.0), rgba(180, 212, 229, 1.0));
+margin:5px;
+padding:8px;
+  
+
+}
+
