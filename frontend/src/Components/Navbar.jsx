@@ -1,6 +1,6 @@
 import React from "react";
 import "../Style/navbar.css";
-
+import { BrowserRouter,Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
@@ -10,7 +10,13 @@ const Navbar = () => {
         <ul className='nav-links flex'>
           <li>
             <a href='#' className='nav-title'>
-              Mental Health A-Z
+             Home
+
+            </a>
+          </li>
+          <li>
+            <a href='#' className='nav-title'>
+              Consultancy
               <ul className='nav-sub'>
                 <li>
                   <a href='#'>Mental</a>
@@ -29,7 +35,22 @@ const Navbar = () => {
           </li>
           <li>
             <a href='#' className='nav-title'>
-              Self-Improvement
+              Podcasts
+              <ul className='nav-sub'>
+                <li>
+                  <a href='#'>Meditation</a>
+                </li>
+                <li>
+                  <a href='#'>Yoga</a>
+                </li>
+               
+               
+              </ul>
+            </a>
+          </li>
+          <li>
+            <a href='#' className='nav-title'>
+              Articles
               <ul className='nav-sub'>
                 <li>
                   <a href='#'>Mental</a>
@@ -47,60 +68,9 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href='#' className='nav-title'>
-              Pyscology
-              <ul className='nav-sub'>
-                <li>
-                  <a href='#'>Mental</a>
-                </li>
-                <li>
-                  <a href='#'>happiness</a>
-                </li>
-                <li>
-                  <a href='#'>depression</a>
-                </li>
-                <li>
-                  <a href='#'>anxiety</a>
-                </li>
-              </ul>
-            </a>
-          </li>
-          <li>
-            <a href='#' className='nav-title'>
-              Podcast
-              <ul className='nav-sub'>
-                <li>
-                  <a href='#'>Mental</a>
-                </li>
-                <li>
-                  <a href='#'>happiness</a>
-                </li>
-                <li>
-                  <a href='#'>depression</a>
-                </li>
-                <li>
-                  <a href='#'>anxiety</a>
-                </li>
-              </ul>
-            </a>
-          </li>
-          <li>
-            <a href='#' className='nav-title'>
-              About us
-              <ul className='nav-sub'>
-                <li>
-                  <a href='#'>Mental</a>
-                </li>
-                <li>
-                  <a href='#'>happiness</a>
-                </li>
-                <li>
-                  <a href='#'>depression</a>
-                </li>
-                <li>
-                  <a href='#'>anxiety</a>
-                </li>
-              </ul>
+            <a href="../journal" className='nav-title'>
+              Journaling
+             
             </a>    
           </li>
         </ul>

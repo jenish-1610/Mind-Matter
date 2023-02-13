@@ -6,6 +6,7 @@ import Error from "./Pages/Error";
 import Otp from "./Pages/otp";
 import Journal from "./Pages/journal";
 import Home from "./Pages/Home";
+import Note from "./Pages/Note";
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
           {/* <Route path='/' element={<></>} /> */}
           <Route path='/signup' element={<Sign_up />} />
           <Route path='/journal' element={<Journal />} />
+          <Route path='/journal/:id' element={<Note />} />
           <Route path='/otp/:email' element={<Otp />} />
-          <Route path='/home' element={ <Home />}/>
+          <Route path='/home' element={<Home />} />
           <Route path='*' element={<Error />} />
         </Routes>
       </BrowserRouter>

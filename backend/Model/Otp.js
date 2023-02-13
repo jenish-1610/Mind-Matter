@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const OTPSchema = mongoose.Schema({
-    user: {
+  user: {
     type: Schema.Types.ObjectId,
     ref: "User",
     required: true,
