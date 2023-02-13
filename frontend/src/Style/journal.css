@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color:rgb(206, 206, 206);
+    background-color:rgb(46, 255, 252);
 }
 .logo
 {
@@ -27,21 +27,30 @@ img{
   .button {
      width:200px;
     border-radius: 15px;
-    border-color:rgb(46, 56, 73);
+    border:none;
     font-weight: bolder;
-    font-size: medium;
-     padding-top: 10px;;
-    color: rgb(47, 85, 156);
+    font-size: large;
+     padding-top: 5px;
+     margin-top: 5px;
+    color: rgb(4, 33, 52);
     /* Created with https://www.css-gradient.com */
   /* Created with https://www.css-gradient.com */
   background: rgba(251, 254, 255, 1.0);
-  background: -webkit-linear-gradient(bottom, rgb(34, 52, 58), rgba(180, 212, 229, 1.0));
-  background: -moz-linear-gradient(bottom, rgb(42, 63, 70), rgba(180, 212, 229, 1.0));
-  background: linear-gradient(to top, rgb(56, 77, 84), rgba(180, 212, 229, 1.0));
+  background: -webkit-linear-gradient(bottom, rgb(129, 214, 242), rgba(180, 212, 229, 1.0));
+  background: -moz-linear-gradient(bottom, rgb(156, 216, 236), rgba(180, 212, 229, 1.0));
+  background: linear-gradient(to top, rgb(85, 157, 180), rgba(180, 212, 229, 1.0));
   margin:5px;
   padding:8px;
     
   
+  }
+  .button:hover{
+    background: rgb(146, 223, 249);
+    background: -webkit-linear-gradient(bottom, rgb(64, 144, 171), rgba(180, 212, 229, 1.0));
+    background: -moz-linear-gradient(bottom, rgb(156, 216, 236), rgba(180, 212, 229, 1.0));
+    background: linear-gradient(to top, rgb(36, 87, 104), rgba(180, 212, 229, 1.0));
+    
+    cursor: pointer;
   }
   
 p
@@ -58,4 +67,41 @@ p
     font-weight:lighter;
     color:rgb(71, 71, 71);
     margin-top: 10px;
+}
+
+.title {
+    color:darkblue;
+}
+
+.textarea
+{
+    border-radius: 10px;
+    width:863px;
+    height:891px;
+    word-wrap: break-word;
+    background-color: rgb(230, 246, 251);
+    border: 2px solid transparent;
+   outline:none;
+   font-size:large;
+   line-height: 1.4;
+   padding: 10px;
+   margin:10px;
+   transition: all 0.2s;
+   color: darkblue;
+
+}
+.textarea:hover title:hover{
+    cursor:pointer;
+
+}
+.textarea:focus title:focus{
+    cursor:text;
+}
+.textarea::placeholder title::placeholder{
+   font-size: 20px; 
+   
+   margin: 10px;
+   padding: 10px;
+   font-family: cursive;
+   
 }

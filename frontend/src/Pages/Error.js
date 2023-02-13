@@ -7,8 +7,8 @@ const Error = () => {
     <div style={{ overflow: "hidden" }}>
       <header className='top-banner flex container'>
         <a href=''>
-          <span className='first'>Mental</span>
-          <span className='second'>Health</span>
+          <span className='first'>Mind</span>
+          <span className='second'>Matter</span>
         </a>
       </header>
       <div className='container main flex'>

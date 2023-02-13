@@ -82,6 +82,11 @@ router.post("/signup", async (req, res) => {
   }
 });
 
+// router.post("/validateToken", async (req, res) => { 
+
+  
+// })
+
 router.post("/login", async (req, res) => {
   const entered_email = await User.find({
     $or: [{ username: req.body.username }, { email: req.body.username }],
@@ -92,6 +97,10 @@ router.post("/login", async (req, res) => {
       res.json({
         code: 200,
         status: "Login sucessfully",
+        token: {
+          email: entered_email[0].email,
+          time: Date(),
+        }
       });
     } else {
       res.json({

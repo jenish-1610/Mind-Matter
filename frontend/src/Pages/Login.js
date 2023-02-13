@@ -7,9 +7,11 @@ import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 // import Footer from "../Components/Footer";
 
-// const navigate = useNavigate();
 
 const Login = () => {
+  const navigate = useNavigate();
+
+  
   const [user, setUser] = useState({
     username: "",
     password: "",
@@ -52,7 +54,13 @@ const Login = () => {
           progress: undefined,
           theme: "dark",
         });
-        // navigate("../");
+        // console.log(response.data.token);
+        window.localStorage.setItem("loginToken", response.data.token.email);
+        // console.log(window.localStorage.getItem("loginToken"));
+        // let token = window.localStorage.getItem("loginToken");
+        // console.log(token)
+
+        navigate("../home");
       } else {
         toast.error("username or password is incorrect", {
           position: "top-right",

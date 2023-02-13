@@ -17,7 +17,7 @@ const mailer = (email, otp) => {
   var mailOptions = {
     from: "mail.eauction@gmail.com",
     to: email,
-    subject: "Sucessfully Registration Mail",
+    subject: "Otp Verification",
     html: `<div style="font-family: Helvetica,Arial,sans-serif;min-width:1000px;overflow:auto;line-height:2">
   <div style="margin:50px auto;width:70%;padding:20px 0">
     <div style="border-bottom:1px solid #eee">
@@ -31,7 +31,7 @@ const mailer = (email, otp) => {
     <p style="font-size:0.9em;">Regards,<br />Health Care</p>
     <hr style="border:none;border-top:1px solid #eee" />
     <div style="float:right;padding:8px 0;color:#aaa;font-size:0.8em;line-height:1;font-weight:300">
-      <p>HealthCare Team</p>
+      <p>MindMatterss Team</p>
       <p>DDU IT Faculty of Technology</p>
       <p>Nadiad</p></div>
   </div>
