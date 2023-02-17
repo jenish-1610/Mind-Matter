@@ -7,6 +7,7 @@ import Otp from "./Pages/otp";
 import Journal from "./Pages/journal";
 import Home from "./Pages/Home";
 import Note from "./Pages/Note";
+import Consultancy from "./Pages/Consultancy";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/journal/:id' element={<Note />} />
           <Route path='/otp/:email' element={<Otp />} />
           <Route path='/home' element={<Home />} />
+          <Route path='/consultancy' element={<Consultancy />} />
           <Route path='*' element={<Error />} />
         </Routes>
       </BrowserRouter>
