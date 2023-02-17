@@ -2,14 +2,18 @@ import React from 'react';
 import { FaRegWindowClose } from "react-icons/fa";
 import { FaCaretDown } from "react-icons/fa";
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import "./style.css";
+
  
 const DoctorItem = ({doctor:{ id,img,expertise,Language,info}}) => {
+   const navigate=useNavigate();
  const[infos,showInfo]=useState(true);
  const handler=()=>
  {
    showInfo(!infos);
  }
+ 
    return (
     <article className="doctors">
       <div className="img-container">
