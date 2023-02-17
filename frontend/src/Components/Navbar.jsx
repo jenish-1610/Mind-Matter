@@ -9,7 +9,7 @@ const Navbar = () => {
         
         <ul className='nav-links flex'>
           <li>
-            <a href='#' className='nav-title'>
+            <a href='../home' className='nav-title'>
              Home
 
             </a>

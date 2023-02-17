@@ -67,17 +67,20 @@ body {
 
 .loginbody p label {
     display: block;
-    margin: 10px 0;
+    margin: 1px 0;
+    width:30%;
+    padding-right: 5px;
     font-weight: bold;
 }
 
 .loginbody p input {
 
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #cccc;
-    border-radius: 4px;
-    font-size: 1rem;
+    display: block;
+    width:100%;
+     padding: 10px;
+     border: 2px solid #cccc;
+     border-radius: 4px;
+     font-size: 1rem;
 
 }
 
