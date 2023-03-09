@@ -125,7 +125,7 @@ const Sign_up = () => {
             <form action='#'>
               <p>
                 <label htmlFor='username'>UserName</label>
-                <input
+                <input className="box" 
                   type='text'
                   id='username'
                   name='username'
@@ -135,7 +135,7 @@ const Sign_up = () => {
               </p>
               <p>
                 <label htmlFor='email'>Email</label>
-                <input
+                <input className="box"
                   type='email'
                   id='email'
                   name='email'
@@ -145,7 +145,7 @@ const Sign_up = () => {
               </p>
               <p>
                 <label htmlFor='password'>Password</label>
-                <input
+                <input className="box"
                   type='password'
                   id='password'
                   placeholder='Atleast 8 characters'
@@ -156,7 +156,7 @@ const Sign_up = () => {
               </p>
               <p>
                 <label htmlFor='cpassword'>Confirm Password</label>
-                <input
+                <input className="box"
                   type='password'
                   id='cpassword'
                   name='cpassword'
@@ -165,7 +165,7 @@ const Sign_up = () => {
                 />
               </p>
               <p>
-                <input
+                <input className="box"
                   type='submit'
                   value='Create Account'
                   id='submit'

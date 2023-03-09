@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+  }
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+    
+    "work_skills timeline_about"
+    "work_skills timeline_about";
+    width: 100rem;
+    height: 80vh;
+  
+    padding:1.5rem;
+    box-shadow: 0 0 5px rgba(55, 53, 53, 0.5), 0 0 25px rgba(85, 85, 85, 0.08);
+  } 
+ 
+  
+  .work_skills {
+    grid-area: work_skills;
+  }
+  
+  .userDetails {
+    grid-area: userDetails;
+  }
+  
+  .timeline_about {
+    grid-area: timeline_about;
+  } 
+  .container .card {
+   
+    backdrop-filter: blur(3rem);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 25px rgba(99, 96, 96, 0.05);
+    padding: 1.5rem;
+  }
+ 
+  .container .work_skills {
+    padding:1.5rem;
+    
+    
+  }
+  .work_skills .work .heading,
+.work_skills .skills .heading {
+  position: relative;
+  font-size:xx-large;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  padding:10px;
+  margin:10px;
+}
+.work_skills .skills .para
+{
+    position: relative;
+  font-size:x-large;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(31, 31, 88, 0.851);
+ 
+  margin-bottom: 1.5rem;
+} 
+.work_skills .skills .button
+  {
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: rgb(70, 70, 129);
+    color: white;
+    border-radius: 30px;
+    height:70px;
+    max-width: fit-content;
+    margin:10px;
+    padding:30px;
+    border: none;
+  }
+  .work_skills .skills .button:hover{
+    color: rgb(22, 45, 66);
+    background-color:rgb(109, 140, 253) ;
+    cursor: pointer;
+  }
+  .work_skills .skills .book
+  {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .work_skills .skills .profile img{
+    width: 30rem;
+    height: 30rem;
+    border-radius: 10%;
+  } 
+  .timeline_about .upper{
+    display:flex;
+    flex-direction: column;
+    
+    padding:5px;
+    margin:5px;
+   
+    
+    
+  }
+  .timeline_about .upper h1{
+    display: flex;
+    flex-direction: row;
+     
+    font-size: 30px;
+    color:rgb(40, 40, 107);
+    padding:5px;
+  
+    margin:5px;
+  }
+  .timeline_about .upper h1 .icon
+  {
+    padding:5px;
+ 
+  }
+  .timeline_about .upper p{
+    font-size: 20px;
+    color:rgb(70, 70, 153);
+   margin:10px;
+  }
+  .timeline_about .about{
+    padding:10px;
+    margin:10px;
+   
+  }

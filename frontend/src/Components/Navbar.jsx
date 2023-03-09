@@ -9,13 +9,13 @@ const Navbar = () => {
         
         <ul className='nav-links flex'>
           <li>
-            <a href='#' className='nav-title'>
+            <a href='../home' className='nav-title'>
              Home
 
             </a>
           </li>
           <li>
-            <a href='#' className='nav-title'>
+            <a href='../consultancy' className='nav-title'>
               Consultancy
               <ul className='nav-sub'>
                 <li>

@@ -1,0 +1,98 @@
+.doctors
+{
+    height: 500px;
+    width: 600px;
+    margin: 50px auto;
+    border-radius: 7px 7px 7px 7px;
+    /* VIA CSS MATIC https://goo.gl/cIbnS */
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+   
+    
+   
+}
+.img{
+    float: left;
+    height: 420px;
+    width: 327px;
+}
+.img-container
+{
+    position:relative;
+}
+.close-btn
+{
+    position:absolute;
+    display:block;
+    top:5%;
+    right:5%;
+    font-size:2rem;
+    cursor:pointer;
+    transition: all 0.3s linear;
+    opacity:0;
+}
+.img-container:hover .close-btn
+{
+    opacity:1;
+}
+.doctor-info
+{
+    padding:1rem 0.5rem;
+    padding-left: 8px;
+    margin-left: 25px;
+
+}
+h3{
+   color:darkblue; 
+}
+h4{
+    color: cornflowerblue;
+    margin:0.2rem 0 0.6rem 0;
+}
+h5{
+    text-transform: capitalize;
+    display:flex;
+    font-size: 1.1rem;
+}
+h5 span{
+    color:darkblue;
+    margin:0.5rem;
+    font-size: 1.1rem;
+    cursor:pointer;
+}
+.Buttons
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:10px;
+    padding-left:10px;
+    
+
+}
+.book
+{
+   
+  display: inline-block;
+  height: 50px;
+  width: 176px;
+  margin: 0 20px 0 20px;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 60px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  background-color: #2a91d5;
+  cursor: pointer;
+  outline: none;
+    
+
+}
+.book:hover{
+    cursor: pointer;
+}
