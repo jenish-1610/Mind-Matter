@@ -14,7 +14,7 @@
     min-height: 100vh;
     background-color: rgb(255, 255, 255);
   }
-.container {
+.container-viewprofile {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -41,7 +41,7 @@
   .timeline_about {
     grid-area: timeline_about;
   } 
-  .container .card {
+  .container-viewprofile .card {
    
     backdrop-filter: blur(3rem);
     border-radius: 0.5rem;
@@ -49,7 +49,7 @@
     padding: 1.5rem;
   }
  
-  .container .work_skills {
+  .container-viewprofile .work_skills {
     padding:1.5rem;
     
     

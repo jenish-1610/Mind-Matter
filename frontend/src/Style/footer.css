@@ -9,3 +9,8 @@ footer {
   width: 100%;
   background-color: cadetblue;
 }
+
+.flex-footer {
+
+  display: flex;
+}

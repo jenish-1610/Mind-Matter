@@ -112,9 +112,9 @@ const Sign_up = () => {
         pauseOnHover
         theme='dark'
       />
-      <nav>
+       <nav>
         <Navbar />
-      </nav>
+      </nav> 
       <div className='outerbox'>
         <div className='innerbox'>
           <header className='signup-header'>

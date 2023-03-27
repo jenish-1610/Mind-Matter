@@ -30,9 +30,17 @@ const Otp = () => {
 
   return (
     <>
+      <div className="flex-otp">
       <h2>Otp has Sucessfully sent</h2>
-      <input type='number' name='otp' onChange={handler} value={otp} />
-      <input type='submit' value='Submit' onClick={submitHandler} />
+
+      <p className="enter-otp">
+        <input className="enter-otp" type='number' name='otp' onChange={handler} value={otp} />
+      </p>
+      <p className="submit-otp">
+        <input type='submit' value='Submit' onClick={submitHandler} />
+      </p>
+
+      </div>
     </>
   );
 };

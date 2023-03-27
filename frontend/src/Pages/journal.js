@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Logo from "../assets/2840443-removebg-preview.png";
 import { useState } from "react";
 import { Link, redirect, useNavigate } from "react-router-dom";
@@ -18,7 +18,7 @@ const Journal = () => {
   const [showText, showTextArea] = useState(true);
   const journal_Path = "/journal/";
 
-  useState(() => {
+  useEffect(() => {
     const fetchData = async () => {
       const email = window.localStorage.getItem("loginToken");
       const url =
@@ -35,7 +35,7 @@ const Journal = () => {
 
   function handler(e) {
     if (!window.localStorage.getItem("loginToken")) {
-      navigate("../Login");
+      navigate("../login");
     }
     const path =
       process.env.REACT_APP_BACKEND_URL +
@@ -48,7 +48,7 @@ const Journal = () => {
   async function save() {
     const path = process.env.REACT_APP_BACKEND_URL + "journals/addjournal/";
     await axios.post(path, journal).then((res) => {
-      navigate("../journal");
+      navigate("../home");
     });
   }
 
@@ -66,7 +66,7 @@ const Journal = () => {
       ) : (
         <div>
           {journals.length ? (
-            <div className='p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5'>
+            <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4 xl:grid-cols-4 gap-8 '>
               {journals.map((journal, id) => (
                 <Link to={journal_Path + journal._id} key={id}>
                   <div className='max-w-sm rounded overflow-hidden shadow-lg'>
@@ -79,7 +79,9 @@ const Journal = () => {
             <div>
               <div className='logo'>
                 <img src={Logo} alt='journal' hidden={!showText} />
-                <div>
+              </div>
+              <div className='flex-journal'>
+                <div className='title-container'>
                   <input
                     name='title'
                     placeholder='title'
@@ -94,23 +96,24 @@ const Journal = () => {
                   <textarea
                     className='textarea'
                     name='content'
-                    cols='100'
-                    rows='100'
+                    cols='120'
+                    rows='20'
                     wrap='hard'
                     value={journal.content}
                     placeholder='Pen your thoughts here...'
                     onChange={handler2}
                     hidden={showText}
                   ></textarea>
-                  <button
-                    type='submit'
-                    onClick={save}
-                    value='Add Journal'
-                    hidden={showText}
-                  >
-                    Save
-                  </button>
                 </div>
+                <button
+                  className='save-button'
+                  type='submit'
+                  onClick={save}
+                  value='Add Journal'
+                  hidden={showText}
+                >
+                  Save
+                </button>
               </div>
 
               <div className='Button' hidden={!showText}>

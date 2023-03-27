@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 const Error = () => {
   return (
     <div style={{ overflow: "hidden" }}>
-      <header className='top-banner flex container'>
+      <header className='top-banner flex-error container-error'>
         <a href=''>
           <span className='first'>Mind</span>
           <span className='second'>Matter</span>
         </a>
       </header>
-      <div className='container main flex'>
+      <div className='container-error main-error flex-error'>
         <img
           src={require("../assets/404.png")}
           alt='error image'

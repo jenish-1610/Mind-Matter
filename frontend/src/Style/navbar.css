@@ -4,15 +4,19 @@
   box-sizing: border-box;
 }
 
-.flex {
+
+.flex-nav {
   display: flex;
-  
+  /* position: absolute; */
+  z-index: 1;
 }
 
+
 .main-nav {
- display: flex;
+  display: flex;
  align-items: center;
  justify-content:space-between;
+
   position: fixed;
   background-color:rgb(105, 192, 220);
   margin-bottom: 20px;
@@ -65,11 +69,17 @@
   display: none;
   position: absolute;
   z-index: 1;
+  background-color:white;
+  box-shadow: grey;
+  /* margin-top: 15px; */
+  width: 200px;
 }
 
 .nav-sub li a {
   color: #13404f;
   display: block;
+  padding: 8px;
+  
 }
 
 .nav-sub li a:hover {

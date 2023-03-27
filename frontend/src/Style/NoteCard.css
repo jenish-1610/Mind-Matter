@@ -1,5 +1,23 @@
 .card{
 
     background-color: cornsilk;
+    width: 2000px;
 
+}.flex-notecard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: aliceblue;
+  width: auto;
+  height: 200px;
+}
+
+.title-notecard {
+  margin-top: 10px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 12px;
+}
+
+.time-notecard {
+  margin-bottom: 10px;
 }
