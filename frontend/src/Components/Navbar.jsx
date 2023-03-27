@@ -4,20 +4,19 @@ import { BrowserRouter,Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <nav className='main-nav flex'>
+      <nav className='main-nav'>
        <div className="logo">Mind Matter</div>
         
-        <ul className='nav-links flex'>
+        <ul className='nav-links flex-nav'>
           <li>
             <a href='../home' className='nav-title'>
              Home
-
             </a>
           </li>
           <li>
             <a href='../consultancy' className='nav-title'>
               Consultancy
-              <ul className='nav-sub'>
+              <ul className='nav-sub flex-navsub'>
                 <li>
                   <a href='#'>Mental</a>
                 </li>
@@ -49,7 +48,7 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href='#' className='nav-title'>
+            <a href='/article' className='nav-title'>
               Articles
               <ul className='nav-sub'>
                 <li>

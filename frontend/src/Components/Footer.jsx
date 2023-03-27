@@ -4,14 +4,14 @@ const Footer = () => {
   return (
 <footer className="relative z-10 bg-sky-100  pt-20 pb-10 lg:pt-[120px] lg:pb-20 ">
   <div className="container mx-auto">
-    <div className="-mx-4 flex flex-wrap">
+    <div className="-mx-4 flex-footer flex-wrap">
       <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
         <div className="mb-10 w-full">
           <h4 className="text-dark mb-9 text-lg font-semibold">Mind Matter</h4>
           <p className="text-body-color mb-7 text-base">
            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore provident veritatis ipsam quaerat possimus nesciunt sapiente a laborum ducimus, perspiciatis deserunt sint? Veritatis ipsam animi nihil in accusamus corporis alias?
           </p>
-          <p className="text-dark flex items-center text-sm font-medium">
+          <p className="text-dark flex-footer items-center text-sm font-medium">
             <span className="text-primary mr-3">
               <svg
                 width="19"
