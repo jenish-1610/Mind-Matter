@@ -1,8 +1,10 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Articlecard from "../Components/Articlecard";
-import NavBar from '../Components/Navbar'
-import { Link } from 'react-router-dom'
+import Navbar from '../Components/Navbar';
+import { Link } from 'react-router-dom';
+import Footer from "../Components/Footer";
+import "../Style/article.css"
 
 const Article = () => {
   const [articles, setArticles] = useState();
@@ -19,11 +21,14 @@ const Article = () => {
 
   return (
     <>
-      {/* <nav><NavBar /></nav> */}
+ <nav>
+  <Navbar/>
+ </nav>
       {/* <h2>Heyyy theree</h2> */}
-
-      {articles ? (
-        <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-5 articel-page'>
+      <main>
+<div className="article">
+     {articles ? (
+        <div className="article-grid">
           {articles.map((article, id) => (
               <Link to='{article.url}' key={id}>
               <Articlecard article={article} />
@@ -33,6 +38,10 @@ const Article = () => {
       ) : (
         <Link to='/home'>Home</Link>
       )}
+      </div>
+      </main>
+     
+
     </>
   );
 };

@@ -18,7 +18,7 @@ const Consultancy = () => {
 
   return (
     <div>
-      <Navbar />
+     
 
       {docs && <Doctorlist doctors={docs} />}
     </div>
