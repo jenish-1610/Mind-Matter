@@ -6,6 +6,7 @@ import { Link, redirect, useNavigate } from "react-router-dom";
 import "../Style/journal.css";
 import axios from "axios";
 import NoteCard from "../Components/NoteCard";
+import Navbar from "../Components/Navbar";
 const Journal = () => {
   const [isLoading, setLoad] = useState(true);
   const [journals, setJournals] = useState([]);
@@ -59,8 +60,18 @@ const Journal = () => {
     //   console.log(user);
   }
 
+  // this will create journal
+
+  // function createJournal() {
+  //   navigate("/CreateJournal");
+  // }
+
   return (
     <div>
+      <nav className='navigation'>
+        <Navbar />
+      </nav>
+
       {isLoading ? (
         <>Loading...</>
       ) : (
@@ -77,6 +88,10 @@ const Journal = () => {
             </div>
           ) : (
             <div>
+              <nav className='navigation'>
+                <Navbar />
+              </nav>
+
               <div className='logo'>
                 <img src={Logo} alt='journal' hidden={!showText} />
               </div>
@@ -116,7 +131,7 @@ const Journal = () => {
                 </button>
               </div>
 
-              <div className='Button' hidden={!showText}>
+              <div className='startjournal-Button' hidden={!showText}>
                 <button className='button' onClick={handler} hidden={!showText}>
                   Start Writing
                 </button>
@@ -132,8 +147,11 @@ const Journal = () => {
                 </p>
               </div>
             </div>
-          )}
-          {/* <Link to={path + }>Create Note</Link> */}
+            )}
+            {/* create journal button */}
+          {/* <div className="createjournal-div">
+              <button className="journal-createjournal" onClick={createJournal}>Create Journal</button>
+            </div> */}
           <div className='container' hidden={!showText}></div>
         </div>
       )}

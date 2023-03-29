@@ -2,12 +2,14 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import Section from "../Components/Section";
-import img1 from '../assets/asset 18.png'
-import img3 from '../assets/asset 2.png'
-import img2 from '../assets/asset 21.png'
-import '../Style/home.css'
+import img1 from "../assets/asset 18.png";
+import img3 from "../assets/asset 2.png";
+import img2 from "../assets/asset 21.png";
+import "../Style/home.css";
 import { Link } from "react-router-dom";
-import img from  '../assets/mind.jpg';
+
+import img from "../assets/mind.jpg";
+
 
 const Home = () => {
   return (
@@ -18,8 +20,8 @@ const Home = () => {
       <main>
         <section className="big-features-section0">
           <h1 >Clear your Mind with Us</h1>
-       
         </section>
+        
         <section className='big-features-section1'>
           <Link to='/journal'>
             <div className='big-features-section1-left'>

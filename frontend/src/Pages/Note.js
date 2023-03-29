@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "../Style/Note.css";
+import Navbar from "../Components/Navbar";
 
 const Note = () => {
   const navigate = useNavigate();
@@ -56,34 +57,39 @@ const Note = () => {
   };
 
   return (
-    <div className='flex-note'>
-      <div>
-        <input
-          className='title-container-note'
-          type='text'
-          name='title'
-          value={journal.title}
-          onChange={handler}
-        ></input>
+    <>
+      <nav className="navigation">
+        <Navbar/>
+      </nav>
+      <div className='flex-note'>
+        <div>
+          <input
+            className='title-container-note'
+            type='text'
+            name='title'
+            value={journal.title}
+            onChange={handler}
+          ></input>
+        </div>
+        <div>
+          <input
+            className='textarea-note'
+            type='text'
+            name='content'
+            value={journal.content}
+            onChange={handler}
+          ></input>
+        </div>
+        <div className='flex-button'>
+          <button onClick={update} className='secondary-button'>
+            Update
+          </button>
+          <button onClick={Delete} className='secondary-button'>
+            Delete
+          </button>
+        </div>
       </div>
-      <div>
-        <input
-          className='textarea-note'
-          type='text'
-          name='content'
-          value={journal.content}
-          onChange={handler}
-        ></input>
-      </div>
-      <div className='flex-button'>
-        <button onClick={update} className='secondary-button'>
-          Update
-        </button>
-        <button onClick={Delete} className='secondary-button'>
-          Delete
-        </button>
-      </div>
-    </div>
+    </>
   );
 };
 

@@ -1,11 +1,18 @@
-* {
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+*{
+    padding:0px;
+    margin:0px;
+   
 }
+.article{
+    padding-top:150px;
+    /* margin-top: 1000px; */
+    
+}
+.article-grid{
+    
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+   
 
-.article-page {
-    background-color: rgb(14, 255, 255);
+    margin:10px;
 }

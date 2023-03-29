@@ -8,11 +8,9 @@ import Navbar from "../Components/Navbar";
 import img1 from "../assets/login.jpg";
 // import Footer from "../Components/Footer";
 
-
 const Login = () => {
   const navigate = useNavigate();
 
-  
   const [user, setUser] = useState({
     username: "",
     password: "",
@@ -95,7 +93,11 @@ const Login = () => {
         <nav>
           <Navbar />
         </nav>
+
+
+
         
+
         <div className='outerbox'>
        
           <div className='innerbox'>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { doctorData } from "../Components/config/doctorData";
+// import { doctorData } from "../Components/config/doctorData";
 import Navbar from "../Components/Navbar";
-import Doctorlist from "../Components/Doctorlist";
+import Doctorlist from "./viewalldocs";
 import axios from "axios";
 
 const Consultancy = () => {
@@ -16,13 +16,9 @@ const Consultancy = () => {
     fun();
   }, []);
 
-  return (
-    <div>
-     
+  return <div>{docs && <Doctorlist doctors={docs} />}</div>;
 
-      {docs && <Doctorlist doctors={docs} />}
-    </div>
-  );
+
 };
 
 export default Consultancy;
