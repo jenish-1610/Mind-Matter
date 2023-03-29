@@ -25,7 +25,7 @@ const Article = () => {
     <>
       
 
-      <nav className="navigation"><NavBar /></nav>
+      <nav className="navigation"><Navbar /></nav>
       {/* <h2>Heyyy theree</h2> */}
 
       {articles ? (
@@ -39,8 +39,8 @@ const Article = () => {
       ) : (
         <Link to='/home'>Home</Link>
       )}
-      </div>
-      </main>
+     
+      
      
 
     </>
