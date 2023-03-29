@@ -1,13 +1,14 @@
 import React from 'react';
-import docimg from "./doctor.jpg";
-import "./doc1style.css";
+import docimg from "../assets/doctor.jpg";
+import "../Style/docprofile.css";
 import { FaGraduationCap} from 'react-icons/fa';
 import { FaSplotch } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
 import axios  from 'axios';
 import { FaLanguage} from 'react-icons/fa';
 import { useParams } from 'react-router-dom';
-import Footer from '../../Components/Footer'
+import Footer from '../Components/Footer'
+import Navbar from '../Components/Navbar';
 const Doc1 = () => {
   const id = useParams();
   console.log(id);
@@ -24,9 +25,9 @@ const Doc1 = () => {
   return (
     
     <div>
-      {/* <nav>
-        <NavBar/>
-      </nav> */}
+      <nav className='navigation'>
+        <Navbar/>
+      </nav>
 
 
 

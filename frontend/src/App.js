@@ -7,10 +7,12 @@ import Otp from "./Pages/otp";
 import Journal from "./Pages/journal";
 import Home from "./Pages/Home";
 import Note from "./Pages/Note";
-import Doc1 from "./Components/Doctorlist/Doc1";
+import Doc1 from "./Pages/docprofile";
 import Consultancy from "./Pages/Consultancy";
 import TherpistRegister from "./Pages/TherapistRegister";
 import Article from "./Pages/Article";
+import CreateJournal from "./Pages/createJournal";
+import Homeconsultancy from "./Pages/homeconsultancy";
 function App() {
   return (
     <div>
@@ -28,7 +30,9 @@ function App() {
           <Route path='/docProfile/:id' element={<Doc1 />} />
           <Route path='/therapist_Signup' element={<TherpistRegister />} />
           <Route path='/article' element = {<Article/>} />
-
+          <Route path='/createjournal' element={<CreateJournal />} />
+          <Route path='/homeconsultancy' element={<Homeconsultancy/>} />
+          
           <Route path='*' element={<Error />} />
         </Routes>
       </BrowserRouter>

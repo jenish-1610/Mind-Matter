@@ -6,12 +6,14 @@ const Articlecard = (props) => {
   console.log(props.article.urlToImage);
   return (
     <>
-      <div className='article-card'>
-        {/* <h4 >{article.title}</h4> */}
+      <main>
+        <div className='article-card'>
+          {/* <h4 >{article.title}</h4> */}
 
-        <p className='article-card-description'>{article.title}</p>
-        {/* { article.content}   */}
-      </div>
+          <p className='article-card-description'>{article.title}</p>
+          {/* { article.content}   */}
+        </div>
+      </main>
     </>
   );
 };

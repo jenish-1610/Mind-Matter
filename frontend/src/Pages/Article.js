@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Articlecard from "../Components/Articlecard";
 import NavBar from '../Components/Navbar'
 import { Link } from 'react-router-dom'
+import '../Style/articlepage.css'
 
 const Article = () => {
   const [articles, setArticles] = useState();
@@ -19,11 +20,13 @@ const Article = () => {
 
   return (
     <>
-      {/* <nav><NavBar /></nav> */}
+      
+
+      <nav className="navigation"><NavBar /></nav>
       {/* <h2>Heyyy theree</h2> */}
 
       {articles ? (
-        <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-5 articel-page'>
+        <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-5 article-page'>
           {articles.map((article, id) => (
               <Link to='{article.url}' key={id}>
               <Articlecard article={article} />

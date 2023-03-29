@@ -2,11 +2,12 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import Section from "../Components/Section";
-import img1 from '../assets/asset 18.png'
-import img3 from '../assets/asset 2.png'
-import img2 from '../assets/asset 21.png'
-import '../Style/home.css'
+import img1 from "../assets/asset 18.png";
+import img3 from "../assets/asset 2.png";
+import img2 from "../assets/asset 21.png";
+import "../Style/home.css";
 import { Link } from "react-router-dom";
+import img from "../assets/mind.jpg";
 
 const Home = () => {
   return (
@@ -15,6 +16,9 @@ const Home = () => {
         <Navbar />
       </header>
       <main>
+        <section className='big-features-section0'>
+          <h1>Clear your Mind with Us</h1>
+        </section>
         <section className='big-features-section1'>
           <Link to='/journal'>
             <div className='big-features-section1-left'>
@@ -23,7 +27,7 @@ const Home = () => {
           </Link>
           <div className='big-features-section1-right'>
             {/* <p>Maintain Journal</p> */}
-            <h2>Journal</h2>
+            <h1>Journaling</h1>
             <p>
               Test interfaces, interaction flows, iconography and more, to help
               you create intuitive and delightful experiences for your users.
@@ -42,9 +46,9 @@ const Home = () => {
 
         <section className='big-features-section2'>
           <div className='big-features-section2-left'>
-            <h2 className='big-features-section2-heading'>
+            <h1 className='big-features-section2-heading'>
               Register Yourself as Doctor
-            </h2>
+            </h1>
 
             <p className='doctor-thought'>
               Physicians do a lot for a patient when they give his disease a
