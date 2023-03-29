@@ -1,9 +1,12 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Articlecard from "../Components/Articlecard";
-import NavBar from '../Components/Navbar'
-import { Link } from 'react-router-dom'
-import '../Style/articlepage.css'
+
+import Navbar from '../Components/Navbar';
+import { Link } from 'react-router-dom';
+import Footer from "../Components/Footer";
+import "../Style/article.css"
+
 
 const Article = () => {
   const [articles, setArticles] = useState();
@@ -36,6 +39,10 @@ const Article = () => {
       ) : (
         <Link to='/home'>Home</Link>
       )}
+      </div>
+      </main>
+     
+
     </>
   );
 };

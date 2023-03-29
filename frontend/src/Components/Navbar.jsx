@@ -11,6 +11,7 @@ const Navbar = () => {
             </div>
     
             <div class="hidden sm:flex sm:items-center" className="nav-links flex">
+
               <a href="../home" class="text-gray-800  font-semibold hover:text-purple-600 mr-4">Home</a>
               <a href="../homeconsultancy" class="text-gray-800  font-semibold hover:text-purple-600 mr-4">Consultancy</a>
               <a href="../article" class="text-gray-800  font-semibold hover:text-purple-600 mr-4">Articles</a>

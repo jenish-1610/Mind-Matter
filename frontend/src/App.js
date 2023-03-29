@@ -13,10 +13,17 @@ import TherpistRegister from "./Pages/TherapistRegister";
 import Article from "./Pages/Article";
 import CreateJournal from "./Pages/createJournal";
 import Homeconsultancy from "./Pages/homeconsultancy";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+
+
 function App() {
   return (
     <div>
+  <Navbar/>
+ 
       <BrowserRouter>
+     
         <Routes>
           {/* <Route index element={<>hello</>} /> */}
           <Route path='/login' element={<Login />} />
@@ -35,7 +42,12 @@ function App() {
           
           <Route path='*' element={<Error />} />
         </Routes>
-      </BrowserRouter>
+        </BrowserRouter>
+     
+     
+     
+
+    
     </div>
   );
 }
