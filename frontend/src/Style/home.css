@@ -104,35 +104,36 @@ h1
 }
 
 .register-button , .journal-button , .consultancy-button{
-    text-align: center;
-    width: 200px;
-  border-radius: 15px;
-  border: none;
-  font-weight: bolder;
-  font-size: x-large;
+    box-shadow:inset 0px -1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #74e1ff 5%, #2b9dc3 100%);
+	background-color:#47b6d5;
+	border-radius:13px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:10px 24px;
+	text-decoration:none;
+	text-shadow:44px 36px 45px #ffffff;
+  margin:10px;
+  margin-left:160px;
+  width:170px;
+  
+  
+}
+.consultancy-button{
+    width:190px;
+    margin-top:50px;
+    margin-left:270px;
+}
+.register-button{
+    width:200px;
+    margin-top:50px;
+    margin-left:100px;
 
- 
-  color: rgb(4, 33, 52);
-  /* Created with https://www.css-gradient.com */
-  /* Created with https://www.css-gradient.com */
-  background: rgba(251, 254, 255, 1);
-  background: -webkit-linear-gradient(
-    bottom,
-    rgb(129, 214, 242),
-    rgba(180, 212, 229, 1)
-  );
-  background: -moz-linear-gradient(
-    bottom,
-    rgb(156, 216, 236),
-    rgba(180, 212, 229, 1)
-  );
-  background: linear-gradient(
-    to top,
-    rgb(85, 157, 180),
-    rgba(180, 212, 229, 1)
-  );
-  margin: 5px;
-  padding: 8px;
 }
 
 .big-features-section2 {
@@ -165,6 +166,17 @@ h1
 .big-features-section2-heading {
     font-size: 2.5rem;
 }
+.big-features-section2-heading h1:after{
+    content: '';
+    width: 150px;
+    height: 4px;
+    border-radius: 3px;
+    position: absolute;
+    background: #32e0ff;
+    top: 1300px;
+    left: 45.2%;
+    transform: translateY(-50%);
+}
 
 .doctor-thought {
     font-size: 1.3rem;
@@ -178,18 +190,7 @@ h1
 
 }
 
-.heading-consultancy h1::after {
 
-    content: '';
-    width: 150px;
-    height: 4px;
-    border-radius: 3px;
-    position: absolute;
-    background: #32e0ff;
-    top: 1740px;
-    left: 45.2%;
-    transform: translateY(-50%);
-}
 
 .consultancy-section {
 
@@ -301,7 +302,7 @@ h1
     border-radius: 3px;
     position: absolute;
     background: #32e0ff;
-    top: 2450px;
+    top: 2780px;
     left: 45.2%;
     transform: translateY(-50%);
     z-index: 0;

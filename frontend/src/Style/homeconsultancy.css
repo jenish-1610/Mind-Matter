@@ -70,15 +70,26 @@
 
 .get-started-button {
     /* padding: 18px; */
-    border: 2px solid aqua;
-    width: 150px;
-    height: 40px;
-    padding-left: 20px;
-    padding-top: 8px;
-    border-radius: 20px;
-    background: linear-gradient(#ffffff , #39cccc); 
+    box-shadow:inset 0px -1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #74e1ff 5%, #2b9dc3 100%);
+	background-color:#47b6d5;
+	border-radius:13px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:10px 24px;
+	text-decoration:none;
+	text-shadow:44px 36px 45px #ffffff;
+  margin:10px;
 }
-
+.get-started-button :hover{
+    background:linear-gradient(to bottom, #408c99 5%, #23a8eb 100%);
+	background-color:#408c99;
+}
 .how-it-work-section {
     margin-top: 50px;
     display: flex;
@@ -98,8 +109,8 @@
 .underline{
     width: 100px;
     height: 5px;
-    background-color: aqua;
-    border: 2px solid aqua;
+    background-color: rgb(41, 178, 209);
+    border: 2px solid rgb(41, 178, 209);
     border-radius: 5px;
 }
 
@@ -118,8 +129,8 @@
 
     width: 40px;
     height: 5px;
-    background-color: aqua;
-    border: 2px solid aqua;
+    background-color: rgb(41, 178, 209);
+    border: 2px solid rgb(41, 178, 209);
     border-radius: 5px;
 
 }
@@ -200,24 +211,31 @@
 }
 
 .extra-section-button {
-    margin-left: 120px;
-    font-size: 1.5rem;
-    font-weight: 300;
-    /* padding-bottom: 15px; */
-    border: 2px solid aqua;
-    width: 150px;
-    height: 50px;
-    padding-left: 25px;
-    padding-top: 8px;
-    border-radius: 20px;
-    background: linear-gradient(#ffffff , #39cccc);
+  
+    box-shadow:inset 0px -1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #74e1ff 5%, #2b9dc3 100%);
+	background-color:#47b6d5;
+	border-radius:13px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:10px 24px;
+	text-decoration:none;
+	text-shadow:44px 36px 45px #ffffff;
+  margin:10px;
+  margin-left:190px;
+  width:150px;
+  
 }
 
 .extra-section-button:hover , .get-started-button:hover , .view-all-counselors-button:hover {
 
-    cursor: pointer;
-    background: linear-gradient(#ffffff , #ffff);
-    transition: 5s ease-out;
+    background:linear-gradient(to bottom, #408c99 5%, #23a8eb 100%);
+	background-color:#408c99;
 }
 
 .view-all-doctors-section {
@@ -255,13 +273,28 @@
 
 .view-all-counselors-button {
 
-    border: 2px solid aqua;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
     width: 190px;
-    height: 40px;
-    padding-left: 20px;
-    padding-top: 8px;
-    border-radius: 20px;
-    background: linear-gradient(#ffffff , #39cccc);
+    height: 50px;
+    box-shadow:inset 0px -1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #74e1ff 5%, #2b9dc3 100%);
+	background-color:#47b6d5;
+	border-radius:13px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:10px 24px;
+	text-decoration:none;
+	text-shadow:44px 36px 45px #ffffff;
+  margin:10px;
+  margin-left:200px;
 
 }
 
