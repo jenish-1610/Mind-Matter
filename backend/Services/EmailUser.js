@@ -1,10 +1,8 @@
-// const express = require("express");
-// const router = express.Router();
 require("dotenv").config();
 
 var nodemailer = require("nodemailer");
 
-const mailer = (email, otp) => {
+const mailUser = (email) => {
   var transporter = nodemailer.createTransport({
     service: "gmail",
     host: "smtp.gmail.com",
@@ -14,16 +12,16 @@ const mailer = (email, otp) => {
     },
   });
 
-  var mailOptions = {
+  var mailing2 = {
     from: process.env.EMAIL,
     to: email,
-    subject: "Otp Verification",
+    subject: "Appointment Notification",
     html: `<div style="font-family: Helvetica,Arial,sans-serif;min-width:1000px;overflow:auto;line-height:2">
   <div style="margin:50px auto;width:70%;padding:20px 0">
     <div style="border-bottom:1px solid #eee">
       <a href="" style="font-size:1.4em;color: #00466a;text-decoration:none;font-weight:600">Mental Health</a>
     </div>
-    <h2 style="background: #00466a;margin: 0 auto;width: max-content;padding: 0 10px;color: #fff;border-radius: 4px;">${otp}</h2>
+    <h2 style="background: #00466a;margin: 0 auto;width: max-content;padding: 0 10px;color: #fff;border-radius: 4px;">User your appointment is booked on your selected date</h2>
     <p style="font-size:1.1em">Hi,</p>
     <p>Thank you for choosing Us.</p>
     <p>Hope you are doing well with your mental health</p>
@@ -38,13 +36,13 @@ const mailer = (email, otp) => {
 </div>`,
   };
 
-  transporter.sendMail(mailOptions, function (error, info) {
+  transporter.sendMail(mailing2, function (error, info) {
     if (error) {
       console.log(error);
     } else {
-      console.log("Email sent: " + info.response);
+      console.log("email sent: " + info.response);
     }
   });
 };
 
-module.exports = mailer;
+module.exports = mailUser;

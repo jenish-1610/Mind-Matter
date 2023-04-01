@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 
 const Error = () => {
   return (
-    <div style={{ overflow: "hidden" }}>
+    <div style={{
+      overflow: "hidden",
+      marginLeft: '220px'
+    }}>
       <header className='top-banner flex-error container-error'>
         <a href=''>
           <span className='first'>Mind</span>
@@ -29,7 +32,7 @@ const Error = () => {
           </p>
         </div>
         <div className='home-button'>
-          <Link to='../home'>Return home</Link>
+          <Link to='../'>Return home</Link>
         </div>
       </div>
     </div>

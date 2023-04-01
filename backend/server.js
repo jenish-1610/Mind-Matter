@@ -4,7 +4,8 @@ const port = process.env.PORT || 5000;
 const cors = require("cors");
 const userRouter = require("./Routes/userRoutes");
 const journalRouter = require("./Routes/journalRoutes");
-const consultRouter = require("./Routes/consultRouter")
+const consultRouter = require("./Routes/consultRouter");
+const appointmentRouter = require("./Routes/appointmentRouter");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const db_url = process.env.DATABASE_URL;
@@ -32,6 +33,7 @@ app.use(bodyParser.json());
 app.use("/users", userRouter);
 app.use("/journals", journalRouter);
 app.use("/therapist", consultRouter);
+app.use("/appointment", appointmentRouter);
 
 app.listen(port, () => {
   console.log("Server Started");

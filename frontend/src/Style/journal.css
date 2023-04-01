@@ -7,6 +7,13 @@ body {
   background-color: rgb(46, 255, 252);
   display: flex;
 }
+
+.grid-journal {
+  position: absolute;
+  top: 35%;
+  left: 300px;
+  right: 300px;
+}
 .logo {
   display: flex;
   align-items: center;
@@ -20,16 +27,18 @@ img {
 }
 .startjournal-Button {
   display: flex;
+  align-items: center;
   justify-content: center;
   /* padding: 10px; */
   margin-top: -120px;
   margin-bottom: auto;
   padding-bottom: 20px;
+  margin-left: -90px;
 }
-.button {
+.journal-button {
   width: 200px;
  
-  margin: 5px;
+  /* margin: 5px; */
   padding: 8px;
   box-shadow:inset 0px -1px 0px 0px #ffffff;
 	background:linear-gradient(to bottom, #74e1ff 5%, #2b9dc3 100%);
@@ -45,8 +54,8 @@ img {
 	padding:10px 24px;
 	text-decoration:none;
 	text-shadow:44px 36px 45px #ffffff;
-  margin:10px;
-
+  /* margin:10px; */
+  margin-left: 200px;
   width:170px;
 }
 .button:hover {
@@ -205,4 +214,13 @@ p {
   margin: 5px;
   padding: 8px;
   
+}
+
+.my-journalssss {
+  margin-left: 270px;
+}
+
+.my-journal-button {
+  margin-left: 240px;
+  margin-top: -150px;
 }

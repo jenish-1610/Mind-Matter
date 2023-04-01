@@ -10,7 +10,32 @@ import arrow from "../assets/arrow.png"
 import img from "../assets/have_questions_asset.webp"
 import img3 from '../assets/asset 2.png'
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 const homeconsultancy = () => {
+
+  const navigate = useNavigate();
+
+
+  function handler1(e) { 
+
+    if (window.localStorage.getItem('loginToken')) {
+      navigate('/consultancy')
+    }
+    else { 
+      navigate('/login')
+    }
+
+  }
+
+  function handler2(e) { 
+    if (window.localStorage.getItem("loginToken")) {
+      navigate("/consultancy");
+    } else {
+      navigate("/login");
+    }
+  }
+
+
   return (
     <div>
       <nav className='navigation'>
@@ -40,7 +65,7 @@ const homeconsultancy = () => {
         </div>
 
         <div className='home-consultancy-get-start-button'>
-          <div className='get-started-button'>Lets Get Started</div>
+          <div className='get-started-button' onClick={handler1}>Lets Get Started</div>
         </div>
       </div>
 
@@ -95,7 +120,7 @@ const homeconsultancy = () => {
             Get help in choosing the right counselling therapist-specialization,
             preferred time and gender
           </p>
-          <div className='extra-section-button'>Let's Start</div>
+          <div className='extra-section-button' onClick={handler2}>Let's Start</div>
         </div>
 
         <div className='extra-section-right'>

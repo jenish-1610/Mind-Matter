@@ -8,7 +8,10 @@ const Articlecard = (props) => {
 
     <>
       <main>
-        <div className='article-card'>
+        <div
+          className='article-card'
+          style={{ background: `url(${props.article.urlToImage})`, backgroundSize : 'cover' }}
+        >
           {/* <h4 >{article.title}</h4> */}
 
           <p className='article-card-description'>{article.title}</p>

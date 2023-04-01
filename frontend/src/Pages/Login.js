@@ -59,7 +59,7 @@ const Login = () => {
         // let token = window.localStorage.getItem("loginToken");
         // console.log(token)
 
-        navigate("../home");
+        navigate("../");
       } else {
         toast.error("username or password is incorrect", {
           position: "top-right",
@@ -90,7 +90,7 @@ const Login = () => {
         theme='dark'
       />
       <div>
-        <nav>
+        <nav className="navigation">
           <Navbar />
         </nav>
 

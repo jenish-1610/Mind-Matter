@@ -69,7 +69,6 @@
 }
 
 .get-started-button {
-    /* padding: 18px; */
     box-shadow:inset 0px -1px 0px 0px #ffffff;
 	background:linear-gradient(to bottom, #74e1ff 5%, #2b9dc3 100%);
 	background-color:#47b6d5;
@@ -277,7 +276,7 @@
     justify-content: center;
     align-items: center;
     
-    width: 190px;
+    width: 250px;
     height: 50px;
     box-shadow:inset 0px -1px 0px 0px #ffffff;
 	background:linear-gradient(to bottom, #74e1ff 5%, #2b9dc3 100%);
@@ -307,4 +306,4 @@
 
 
 
-
+    
