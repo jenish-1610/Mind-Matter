@@ -11,8 +11,14 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.navigation {
+    z-index: 2;
+    /* position: absolute; */
+}
+
 .outerbox {
 
+    z-index: 1;
     width: 100vw;
     height: 100vh;
     background: linear-gradient(#83EAF1, #63A4FF);

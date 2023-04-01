@@ -78,7 +78,7 @@ const TherpistRegister = () => {
           progress: undefined,
           theme: "dark",
         });
-        navigate("/home");
+        navigate("/");
       } else if (response.data.code == 100) {
         toast.error("email is already registered", {
           position: "top-right",

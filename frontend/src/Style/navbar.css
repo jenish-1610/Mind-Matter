@@ -60,8 +60,8 @@
 .Button{
   display:flex;
   align-items: flex-end;
-  padding:20px;
-  margin-bottom: auto;
+  padding:10px;
+  margin-bottom: 4px;
 }
 .Button .buttons1 {
   box-shadow:inset 0px -1px 0px 0px #ffffff;
@@ -92,4 +92,22 @@
 
   position:relative;
 	top:1px;
+}
+
+.nav-aboutus {
+
+  padding-left:5px ;
+  padding-right: 5px;
+}
+
+.nav-contactus {
+  padding-left: 5px;
+}
+
+.nav-aboutus:hover , .nav-contactus:hover {
+  border-bottom: 3px solid #3471d3;
+  outline: 0;
+  color: rgb(36, 61, 112);
+  transition: color .45s ease-out;;
+  transition: 0.45s ease-out;
 }

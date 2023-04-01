@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  margin-left: 280px;
 }
 
 .secondary-button {

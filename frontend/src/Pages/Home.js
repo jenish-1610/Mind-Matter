@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import Section from "../Components/Section";
@@ -8,13 +8,28 @@ import img2 from "../assets/asset 21.png";
 import "../Style/home.css";
 import { Link } from "react-router-dom";
 import img from "../assets/mind.jpg";
+import axios from "axios";
 
 const Home = () => {
+  const [articles, setArticles] = useState();
+  useEffect(() => {
+    const getArts = async () => {
+      const url =
+        "https://newsapi.org/v2/everything?q=depression&from=2023-03-25&to=2023-03-25&sortBy=popularity&pageSize=4&apiKey=" +
+        process.env.REACT_APP_API_KEY;
+      await axios.get(url).then((res) => {
+        setArticles(res.data.articles);
+        console.log(articles);
+      });
+    };
+    getArts();
+  }, []);
   return (
     <>
-      <header>
+      <nav className="navigation">
+        
         <Navbar />
-      </header>
+        </nav>
       <main>
         <section className='big-features-section0'>
           <h1>Clear your Mind with Us</h1>
@@ -59,7 +74,7 @@ const Home = () => {
               our platform
             </p>
             <p className='register-button'>
-              <Link to='/therapist_signup'>Register as Doc</Link>
+              <Link to='/therapist_signup'>Register as Doctor</Link>
             </p>
           </div>
           <div className='big-features-section2-right'>
@@ -100,31 +115,33 @@ const Home = () => {
           <h1>Because Mind Matters.</h1>
         </section>
 
-        <section className='article-section'>
-          <Link to='#' className='example-card1'>
-            <h3 className='card-text'>
-              Anxiety is a thin stream of fear trickling through the mind.
-            </h3>
-          </Link>
-          <Link to='#' className='example-card2'>
-            <h3 className='card-text'>
-              Depression is like a bruise that never goes away. A bruise in your
-              mind.It's always here, though
-            </h3>
-          </Link>
-          <Link to='#' className='example-card3'>
-            <h3 className='card-text'>
-              Happiness is when what you think, what you say, and what you do
-              are in harmony.
-            </h3>
-          </Link>
-          <Link to='#' className='example-card4'>
-            <h3 className='card-text'>
-              Happiness can be found even in the darkest of times, if one only
-              remembers to turn on the light.
-            </h3>
-          </Link>
-        </section>
+        {articles && (
+          <section className='article-section'>
+            <a href={articles[0].url} target='_blank' className='example-card1'>
+              <h3 className='card-text'>
+                Anxiety is a thin stream of fear trickling through the mind.
+              </h3>
+            </a>
+            <a href={articles[1].url} target='_blank'  className='example-card2'>
+              <h3 className='card-text'>
+                Depression is like a bruise that never goes away. A bruise in
+                your mind.It's always here, though
+              </h3>
+            </a>
+            <a href={articles[2].url} target='_blank' className='example-card3'>
+              <h3 className='card-text'>
+                Happiness is when what you think, what you say, and what you do
+                are in harmony.
+              </h3>
+            </a>
+            <a href={articles[3].url} target='_blank' className='example-card4'>
+              <h3 className='card-text'>
+                Happiness can be found even in the darkest of times, if one only
+                remembers to turn on the light.
+              </h3>
+            </a>
+          </section>
+        )}
       </main>
       <footer>
         <Footer />

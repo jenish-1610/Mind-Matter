@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.appointment-flex {
+
+    margin-top: 120px;
+}
+.appointment-booking {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 500px;
+
+}
+
+.appointment-heading {
+    margin-top: 100px;
+    text-align: center;
+    color: rgb(0, 247, 255);
+    margin-bottom: -149px;
+}
+
+.appointment-button {
+
+    box-shadow:inset 0px -1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #74e1ff 5%, #2b9dc3 100%);
+	background-color:#47b6d5;
+	border-radius:13px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:10px 24px;
+	text-decoration:none;
+	text-shadow:44px 36px 45px #ffffff;
+  /* margin:10px; */
+  margin-left: 20px;
+  width: 400px;
+
+}
+
+.appointment-button:hover {
+
+    background:linear-gradient(to bottom, #408c99 5%, #23a8eb 100%);
+	background-color:#408c99;
+
+}
+

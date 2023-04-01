@@ -16,6 +16,7 @@ const Journal = () => {
     email: window.localStorage.getItem("loginToken"),
   });
   const navigate = useNavigate();
+  
   const [showText, showTextArea] = useState(true);
   const journal_Path = "/journal/";
 
@@ -49,7 +50,7 @@ const Journal = () => {
   async function save() {
     const path = process.env.REACT_APP_BACKEND_URL + "journals/addjournal/";
     await axios.post(path, journal).then((res) => {
-      navigate("../home");
+      navigate("../");
     });
   }
 
@@ -77,7 +78,7 @@ const Journal = () => {
       ) : (
         <div>
           {journals.length ? (
-            <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4 xl:grid-cols-4 gap-8 '>
+            <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4 xl:grid-cols-4 gap-8 grid-journal '>
               {journals.map((journal, id) => (
                 <Link to={journal_Path + journal._id} key={id}>
                   <div className='max-w-sm rounded overflow-hidden shadow-lg'>
@@ -87,68 +88,73 @@ const Journal = () => {
               ))}
             </div>
           ) : (
-            <div>
+            <div className='my-journalssss'>
               <nav className='navigation'>
                 <Navbar />
               </nav>
-
-              <div className='logo'>
-                <img src={Logo} alt='journal' hidden={!showText} />
-              </div>
-              <div className='flex-journal'>
-                <div className='title-container'>
-                  <input
-                    name='title'
-                    placeholder='title'
-                    type='text'
-                    hidden={showText}
-                    onChange={handler2}
-                    value={journal.title}
-                    className='title'
-                  />
+              <div>
+                <div className='logo'>
+                  <img src={Logo} alt='journal' hidden={!showText} />
                 </div>
-                <div>
-                  <textarea
-                    className='textarea'
-                    name='content'
-                    cols='120'
-                    rows='20'
-                    wrap='hard'
-                    value={journal.content}
-                    placeholder='Pen your thoughts here...'
-                    onChange={handler2}
+                <div className='flex-journal'>
+                  <div className='title-container'>
+                    <input
+                      name='title'
+                      placeholder='title'
+                      type='text'
+                      hidden={showText}
+                      onChange={handler2}
+                      value={journal.title}
+                      className='title'
+                    />
+                  </div>
+                  <div>
+                    <textarea
+                      className='textarea'
+                      name='content'
+                      cols='120'
+                      rows='20'
+                      wrap='hard'
+                      value={journal.content}
+                      placeholder='Pen your thoughts here...'
+                      onChange={handler2}
+                      hidden={showText}
+                    ></textarea>
+                  </div>
+                  <button
+                    className='save-button'
+                    type='submit'
+                    onClick={save}
+                    value='Add Journal'
                     hidden={showText}
-                  ></textarea>
+                  >
+                    Save
+                  </button>
                 </div>
-                <button
-                  className='save-button'
-                  type='submit'
-                  onClick={save}
-                  value='Add Journal'
-                  hidden={showText}
-                >
-                  Save
-                </button>
-              </div>
 
-              <div className='startjournal-Button' hidden={!showText}>
-                <button className='button' onClick={handler} hidden={!showText}>
-                  Start Writing
-                </button>
-              </div>
-              <div className='par' hidden={!showText}>
-                <p>You haven't added anything to your journal yet.</p>
-              </div>
-              <div className='par2' hidden={!showText}>
-                <p>
-                  Your journal is place to express every detail of your
-                  life-from events,ideas,feelings,to your daily thoughts and
-                  memories
-                </p>
+                <div className='start-journal-Button my-journal-button' hidden={!showText}>
+                  <button
+                    className='journal-button'
+                    onClick={handler}
+                    hidden={!showText}
+                  >
+                    Start Writing
+                  </button>
+                </div>
+                <div className='par' hidden={!showText}>
+                  <p>You haven't added anything to your journal yet.</p>
+                </div>
+                <div className='par2' hidden={!showText}>
+                  <p>
+                    Your journal is place to express every detail of your
+                    life-from events,ideas,feelings,to your daily thoughts and
+                    memories
+                  </p>
+                </div>
               </div>
             </div>
-            )}
-            {/* create journal button */}
+          )}
+          {/* create journal button */}
           {/* <div className="createjournal-div">
               <button className="journal-createjournal" onClick={createJournal}>Create Journal</button>
             </div> */}
