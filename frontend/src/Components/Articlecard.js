@@ -5,6 +5,7 @@ const Articlecard = (props) => {
   const article = props.article;
   console.log(props.article.urlToImage);
   return (
+
     <>
       <main>
         <div

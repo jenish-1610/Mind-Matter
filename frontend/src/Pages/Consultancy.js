@@ -22,6 +22,8 @@ const Consultancy = () => {
   }, []);
 
   return <div>{docs && <Doctorlist doctors={docs} />}</div>;
+
+
 };
 
 export default Consultancy;

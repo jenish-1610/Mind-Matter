@@ -94,7 +94,12 @@ const Login = () => {
           <Navbar />
         </nav>
 
+
+
+        
+
         <div className='outerbox'>
+       
           <div className='innerbox'>
             <header className='login-header'>
               <h1>Login</h1>

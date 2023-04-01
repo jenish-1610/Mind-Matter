@@ -13,14 +13,22 @@ import TherpistRegister from "./Pages/TherapistRegister";
 import Article from "./Pages/Article";
 import CreateJournal from "./Pages/createJournal";
 import Homeconsultancy from "./Pages/homeconsultancy";
+
 import DocAppointment from "./Pages/DocAppointment";
 // import HomeArticle from "./Pages/homeArticle";
 import Contact from "./Pages/contactus"
 // import About from "./Pages/aboutus"
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+
+
 function App() {
   return (
     <div>
+
+ 
       <BrowserRouter>
+     
         <Routes>
           {/* <Route index element={<>hello</>} /> */}
           <Route path='/' index element={<Home />} />
@@ -44,7 +52,12 @@ function App() {
 
           <Route path='*' element={<Error />} />
         </Routes>
-      </BrowserRouter>
+        </BrowserRouter>
+     
+     
+     
+
+    
     </div>
   );
 }

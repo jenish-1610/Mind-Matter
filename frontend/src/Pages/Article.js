@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
 import "../Style/articlepage.css";
 
+
 const Article = () => {
   const [articles, setArticles] = useState();
   const [pageno, setPageno] = useState(1);
@@ -67,6 +68,7 @@ const Article = () => {
 
   return (
     <>
+
       <nav className='navigation'>
         <Navbar />
       </nav>
@@ -92,6 +94,7 @@ const Article = () => {
       <footer>
         <Footer/>
       </footer>
+
     </>
   );
 };
