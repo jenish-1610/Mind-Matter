@@ -16,7 +16,7 @@ const Article = () => {
 
   useEffect(() => {
     const fetch_articles = async () => {
-      const url = `https://newsapi.org/v2/everything?q=health&from=2023-03-25&to=2023-03-25&sortBy=popularity&pageSize=9&page=${pageno}&apiKey=${process.env.REACT_APP_API_KEY}`;
+      const url = `https://newsapi.org/v2/everything?q=mental&from=2023-05-23&sortBy=publishedAt&pageSize=9&page=${pageno}&apiKey=${process.env.REACT_APP_API_KEY}`;
       const res = await axios.get(url);
       setArticles(res.data.articles);
       // console.log(articles);
@@ -28,7 +28,7 @@ const Article = () => {
     // console.log("next");
     setPageno(pageno + 1);
     if (pageno >= 30) {
-      const url = `https://newsapi.org/v2/everything?q=health&from=2023-03-25&to=2023-03-25&sortBy=popularity&pageSize=9&page=1&apiKey=${process.env.REACT_APP_API_KEY}`;
+      const url = `https://newsapi.org/v2/everything?q=mental&from=2023-05-23&sortBy=publishedAt&pageSize=9&page=1&apiKey=${process.env.REACT_APP_API_KEY}`;
       const res = await axios.get(url);
       setArticles(res.data.articles);
       console.log(articles);
@@ -36,7 +36,7 @@ const Article = () => {
       // setNext(false);
     }
     else { 
-      const url = `https://newsapi.org/v2/everything?q=health&from=2023-03-25&to=2023-03-25&sortBy=popularity&pageSize=9&page=${pageno}&apiKey=${process.env.REACT_APP_API_KEY}`;
+      const url = `https://newsapi.org/v2/everything?q=mental&from=2023-05-23&sortBy=publishedAt&pageSize=9&page=${pageno}&apiKey=${process.env.REACT_APP_API_KEY}`;
       const res = await axios.get(url);
       setArticles(res.data.articles);
       // console.log(url)
@@ -50,14 +50,14 @@ const Article = () => {
     // console.log("previous");
     setPageno(pageno - 1);
     if (pageno <= 0) {
-      const url = `https://newsapi.org/v2/everything?q=health&from=2023-03-25&to=2023-03-25&sortBy=popularity&pageSize=9&page=1&apiKey=${process.env.REACT_APP_API_KEY}`;
+      const url = `https://newsapi.org/v2/everything?q=mental&from=2023-05-23&sortBy=publishedAt&pageSize=9&page=1&apiKey=${process.env.REACT_APP_API_KEY}`;
       const res = await axios.get(url);
       setArticles(res.data.articles);
       console.log(articles);
       window.scrollTo(0, 0);
     }
     else { 
-      const url = `https://newsapi.org/v2/everything?q=health&from=2023-03-25&to=2023-03-25&sortBy=popularity&pageSize=9&page=${pageno}&apiKey=${process.env.REACT_APP_API_KEY}`;
+      const url = `https://newsapi.org/v2/everything?q=mental&from=2023-05-23&sortBy=publishedAt&pageSize=9&page=${pageno}&apiKey=${process.env.REACT_APP_API_KEY}`;
       const res = await axios.get(url);
       setArticles(res.data.articles);
       // console.log(url)
